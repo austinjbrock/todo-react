@@ -1,8 +1,20 @@
 import './index.css'
 import Todo from './components/Todo';
 
-function App() {
-  return (
+function App(props) {
+  
+  const taskList = props.tasks?.map((task) => (
+  <Todo 
+    id={task.id} 
+    name={task.name} 
+    completed={task.completed}
+    key={task.id}
+    />
+  ));
+
+
+  
+  return ( 
     <div className="todoapp stack-large">
       <h1>TodoMatic</h1>
       <form>
@@ -10,7 +22,7 @@ function App() {
           <label htmlFor="new-todo-input" className="label__lg">
             What needs to be done?
           </label>
-        </h2>
+        </h2>  
         <input
           type="text"
           id="new-todo-input"
@@ -44,9 +56,7 @@ function App() {
         role="list"
         className="todo-list stack-large stack-exception"
         aria-labelledby="list-heading">
-          <Todo name="Eat" completed={true}/>
-          <Todo name="Code"completed={true}/>
-          <Todo name="Drink Beer!" completed={false}/>
+          {taskList}
 
       </ul>
     </div>
