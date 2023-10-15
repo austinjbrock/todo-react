@@ -60,7 +60,7 @@ body {
   font:
     1.6rem/1.25 Arial,
     sans-serif;
-  background-color: #ffffff;
+  background-color: #25333f;
   color: #4d4d4d;
 }
 @media screen and (min-width: 620px) {
@@ -148,14 +148,15 @@ body {
 }
 /* END GLOBAL STYLES */
 .todoapp {
-  background: #fff;
+  background: #e5e0c9;
   margin: 2rem 0 4rem 0;
   padding: 1rem;
   position: relative;
   box-shadow:
     0 2px 4px 0 rgba(0, 0, 0, 0.2),
     0 2.5rem 5rem 0 rgba(0, 0, 0, 0.1);
-}
+  border-radius: 2%;
+  }
 @media screen and (min-width: 550px) {
   .todoapp {
     padding: 4rem;
