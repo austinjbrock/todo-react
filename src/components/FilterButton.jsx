@@ -1,6 +1,9 @@
 import React from "react";
 
-export default function FilterButton(props){
+export default function FilterButton(){
+  
+  
+  
   return(
     <button type="button" className="btn toggle-btn" aria-pressed="true">
     <span className="visually-hidden">Show </span>
